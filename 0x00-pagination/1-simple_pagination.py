@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple pagination 
+Simple pagination
 """
 import csv
 import math
