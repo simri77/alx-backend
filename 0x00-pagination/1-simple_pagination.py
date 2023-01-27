@@ -45,9 +45,12 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
 
 def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
     """
-    Use assert to verify that both arguments
-    are integers greater than 0
-    return the appropriate page of the dataset
+    Takes 2 integer arguments and returns requested page from the dataset
+    Args:
+        page (int): required page number. must be a positive integer
+        page_size (int): number of records per page. must be a +ve integer
+    Return:
+        list of lists containing required data from the dataset
     """
 
     assert type(page) is int and page > 0
